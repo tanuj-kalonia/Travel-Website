@@ -1,0 +1,648 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  position: relative;
+  height: 95vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/header-image.jpg");
+  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.nav_bar {
+  color: white;
+  padding: 1rem;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 2em;
+  padding: 1rem;
+}
+.nav_items,
+a {
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+ .nav_bar .logo {
+  float: left;
+  font-size: 2.5rem;
+}
+ .nav_bar .nav_items {
+  float: right;
+}
+
+.nav_item{
+  display: inline-block;
+  padding: 1rem;
+}
+
+.clearfix {
+  clear: both;
+}
+li {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+}
+.nav_bar a:link,
+.nav_bar a:visited {
+  color: whitesmoke;
+}
+.nav_bar a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+/* --------------------utility clases---------------- */
+.lg-heading {
+  font-size: 2.5rem;
+}
+.md-heading {
+  font-size: 1.5rem;
+}
+.text-rblue {
+  color: royalblue;
+}
+.text-light {
+  color: #f4f4f4;
+}
+.text-black {
+  color: #555;
+}
+.bg-dark{
+  background: #262626;
+}
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+
+.btn-primary {
+  background-color: #fff;
+  border-radius: 10em;
+  transition: all 200ms ease-in-out;
+}
+.btn-primary:hover{
+    background-color: royalblue;
+    color: whitesmoke;
+    transform:scale(1.1) ;
+}
+/* #############Header content############# */
+p {
+    font-size: 1.1rem;
+  letter-spacing: 0.15em;
+}
+.header-content {
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  text-align: center;
+}
+
+.header-content .travel-heading {
+  font-size: 3rem;
+}
+.header-content .chunnu {
+  font-size: 1.1 rem;
+  font-weight:lighter;
+}
+ /* ################### showcase content begins ############## */
+ .showcase{
+     background: #ddd;
+     padding: 6rem 0;
+     /* height: 100vh; */
+ }
+ .row{
+        box-shadow: 0px 0px 20px #aaa;
+        height: 250px;
+        background: #fff;
+ }
+.row1{
+    margin-bottom: 10rem;
+
+}
+ .row1 .img-box, .row2 .text-box{
+     float: left;
+     width: 50%;
+ }
+ .row2 .img-box, .row1 .text-box{
+      float: right; 
+      width: 50%;
+ }
+ .row .img-box{
+  
+    height: 100%;
+   
+ }
+ .row .text-box{
+  
+     height: 100%; 
+     padding: 2rem;  
+     box-sizing: border-box;
+     background: white;
+
+ }
+.row1 .img-box{
+    background: url("../img/magical\ tree.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.row2 .img-box{
+    background: url("../img/home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+
+
+.btn-sec{
+    border: 2px solid royalblue;
+    border-radius: 10em;
+    transition: all 200ms ease-in-out;
+} 
+.btn-sec:hover{
+    background:royalblue;
+    color: white;
+    transform: scale(1.1);
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ####################### feature section############## */
+.features{
+    /* border: 2px solid blue; */
+    height: 50vh;
+    padding: 5em 0;
+}
+
+.box{
+    width: 33.333333%;
+    /* height: 70%; */
+    float: left ;
+    text-align: center;
+    /* padding: 2rem; */
+    
+}
+
+.box1, .box3{
+  background: rgb(26, 32, 38);
+  
+  color:white;
+  padding: 2rem;
+  
+}
+
+.box2{
+  /* background: linear-gradient(25deg, background-color: #2a2a72; */
+  background-image: linear-gradient(25deg, #2a2a72 0%, #009ffd  50%);
+    color: white;
+    padding: 2rem;
+   
+
+}
+.box-wrapper::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.box-wrapper .box{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   height: 35vh; 
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.459);
+
+}
+
+/* ########################### FOOTER BEGINS #################################
+ */
+
+ .footer{
+  /* border: 2px solid royalblue; */
+  padding: 2rem;
+  text-align: center;
+  letter-spacing: 1em;
+  background: rgb(26, 32, 38);
+  color: white;
+  margin-top: 0rem;
+  margin-bottom: 0%;
+}
+.social-links i{
+  margin: 0.5rem;
+ 
+}
+.facebook{
+ transition: transform 200ms ease-in-out; 
+}
+.insta{
+transition: transform 200ms ease-in-out;
+}
+.linkedin{
+transition: transform 200ms ease-in-out;
+}
+.youtube{
+transition: transform 200ms ease-in-out;
+}
+
+
+.facebook:hover{
+  transform: scale(1.3);
+}
+.insta:hover{
+  transform: scale(1.3);
+}
+
+.linkedin:hover{
+  transform: scale(1.3);
+}
+
+.youtube:hover{
+  transform: scale(1.3);
+}
+
+ /* ################################ABOUT PAGE STYLING#################### */
+ .about{
+   padding: 5rem 0;
+   background: url("../img/pexels-gradienta-7130469.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+ }
+ /* .about-heading{
+ 
+   width: 18rem;
+   border-bottom: 5px solid royalblue; */
+
+
+.about-heading::after{
+   content: '';
+   display: block;
+   border-bottom: 5px solid royalblue;
+   
+}
+.benifits{
+ 
+   padding: 2rem 5rem;
+   font-weight: 500;
+   margin-bottom: 1rem;
+   text-align: center;
+}
+.left-points{
+  float: left;
+  width:50%;
+}
+.right-points{
+  float: right;
+    width:50%;
+}
+.benifits::after{
+   content: '';
+   display: block;
+   clear: both;
+   
+   
+}
+.benifits li::before{
+  content: '\2713'; /*code for tick mark*/
+  color: royalblue;
+  font-weight: bold;
+  padding-right: 1rem;
+
+}
+
+li{
+  font-size: 1.5rem;
+}
+.number{
+  /* border: 2px solid red; */
+  width: 25%;
+  /* margin: 1rem; */
+  padding: 1rem ;
+  float: left;
+  text-align: center;
+}
+
+.numbers::after{
+  content: '';
+  display: block;
+  clear: both;
+  
+}
+.number-heading{
+  font-weight: 700;
+  color: royalblue;
+  color: linear-gradient(25deg, #2a2a72 0%, #009ffd  50%);
+  font-size: 2rem;
+  /* border:2px solid green ; */
+}
+.below-num-line{
+  /* border: 2px solid green; */
+  font-weight: 700;
+  font-size: 1.5rem;
+  
+}
+.points{
+  margin: 0.5rem;
+  font-size: 1.3rem;
+}
+.about-page-para{
+  font-size: 1.1rem;
+}
+/* ---------------------------------------------- */
+.cta-banner{
+  /* border: 2px solid royalblue; */
+  padding:1rem ;
+  margin-top: 3rem;
+  background: linear-gradient(25deg, #2a2a72 0%, #009ffd  50%);
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
+}
+
+
+.cntct-line{
+ 
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  margin-top: 0.4rem;
+}
+
+.left{
+  float: left;
+  width: 60%;
+}
+.right{
+  float: right;
+  width: 40%;
+  text-align: right;
+}
+.cta-banner::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.btn-cntct{
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid white;
+  border-radius: 10rem;
+  padding: 0.3rem 2rem;
+  letter-spacing: 0.2rem;
+  transition: all 200ms ease-in-out;
+
+}
+.btn-cntct:hover
+{
+  background: white;
+  color: royalblue;
+  transform: scale(1.1);
+  
+}
+
+.footer-about{
+  /* border: 2px solid royalblue; */
+  padding: 2rem;
+  text-align: center;
+  letter-spacing: 1em;
+  background: rgb(26, 32, 38);
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+}
+.social-links i{
+  margin: 0.5rem;
+ 
+}
+.facebook{
+ transition: transform 200ms ease-in-out; 
+}
+.insta{
+transition: transform 200ms ease-in-out;
+}
+.linkedin{
+transition: transform 200ms ease-in-out;
+}
+.youtube{
+transition: transform 200ms ease-in-out;
+}
+
+
+.facebook:hover{
+  transform: scale(1.3);
+}
+.insta:hover{
+  transform: scale(1.3);
+}
+
+.linkedin:hover{
+  transform: scale(1.3);
+}
+
+.youtube:hover{
+  transform: scale(1.3);
+}
+
+/* ############################# CONTACT PAGE################## */
+.contact-form{
+padding: 5rem 0;
+background: #f7f7f7;
+height: 700px;
+   
+}
+.both-holder .company-address{
+background:#ddd;
+  float: left;
+  width: 49%;
+  /* border: 2px solid royalblue; */
+  padding: 1rem;
+  height: 500px;
+}
+
+.both-holder::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.both-holder .company-address i{
+  display: inline-block;
+  margin-right: 1rem;
+}
+.both-holder .company-address h2{
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.both-holder .address-group{
+  margin-bottom: 3rem;
+}
+img{
+  max-width: 100%;
+  min-height: 40%;
+  object-fit: cover;
+  object-position: right;
+
+}
+/* #####################Form styling ####################### */
+
+.form h1{
+   border-bottom: 0.4rem solid royalblue
+}
+
+
+.both-holder .form{
+  font-size: 1.6rem;
+  background: #ddd;
+  float: right;
+  width: 49%;
+  /* border: 2px solid royalblue; */
+  padding: 1rem;
+  height: 500px;
+}
+.both-holder label{
+  display: block;
+}
+.form-line{
+  margin-bottom: 1rem;
+}
+
+.both-holder .form input{
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.both-holder .form .form-group{
+  margin-bottom: 1.2rem;
+}
+.both-holder .form label::after{
+  content: '*';
+  color: royalblue;
+
+}
+.both-holder .form textarea{
+  width: 100%;
+  height: 14.4rem;
+  padding: 1rem;
+}
+.submit-btn{
+  display: block;
+  margin: 0 auto;
+  border-radius: 5rem;
+  padding: 0.5em 0.5em;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background: royalblue;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.submit-btn:hover{
+   background: white;
+   color: royalblue;
+   transform: scale(1.1);
+}
+
+/* ######################Thanx styling################### */
+.thanx{
+  background: url("../Images/thanx-image.jpg");
+  /* border: 2px solid rgb(128, 132, 143); */
+  height: 95vh;
+  background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+.thanx-line-box{
+  /* border: 2px solid royalblue; */
+  padding: 1.5rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.thanx-wrapper{
+  /* border: 5px solid red; */
+  margin-top: 5rem;
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* height: 70vh; */
+  
+}
+
+
+.thanx-wrapper .thanx-box{
+  /* border: royalblue 2px solid; */
+  text-align: center;
+  width:33.3333%;
+}
+h3 .feat-t{
+  font-size: 5rem;
+}
+.thanx-wrapper .box1,
+.box2,
+.box3{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   height: 35vh; 
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.459);
+}
+.home-btn{
+  border: 2px solid royalblue;
+  border-radius: 5rem;
+  display: block;
+  color: royalblue;
+  background: white;
+  width: 15rem;
+  margin: 4rem auto;
+  padding: 1.2rem 1rem;
+  text-align: center;
+  transition: all 200ms ease-in-out;
+
+}
+.home-btn:hover{
+  background: royalblue;
+  color: white;
+  transform:scale(1.1) ;
+}
+
+
